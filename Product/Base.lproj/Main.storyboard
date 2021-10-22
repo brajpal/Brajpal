@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xJL-f3-Xi9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Product" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMK-cJ-esd">
+                                <rect key="frame" x="20" y="387.5" width="374" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="uJg-Nz-Ony"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Product">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTappedShowProductBtnWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Cj-Tx-zWQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7j-Yr-mnm">
+                                <rect key="frame" x="0.0" y="447.5" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="rYI-RE-qnU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-FL-PQe">
+                                <rect key="frame" x="20" y="463.5" width="374" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="sgg-D8-8v3"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create Product">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTappedCreateProductBtnWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zzx-rJ-vOl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oj7-FL-PQe" secondAttribute="trailing" constant="20" id="6dX-VF-EQw"/>
+                            <constraint firstItem="J7j-Yr-mnm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GeS-w5-0jA"/>
+                            <constraint firstItem="Oj7-FL-PQe" firstAttribute="top" secondItem="J7j-Yr-mnm" secondAttribute="bottom" constant="15" id="Udq-rq-6PH"/>
+                            <constraint firstItem="J7j-Yr-mnm" firstAttribute="top" secondItem="AMK-cJ-esd" secondAttribute="bottom" constant="15" id="Ygn-BZ-egu"/>
+                            <constraint firstItem="J7j-Yr-mnm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cKf-0l-5JR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AMK-cJ-esd" secondAttribute="trailing" constant="20" id="i5w-lr-h05"/>
+                            <constraint firstItem="AMK-cJ-esd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mhz-2H-9Rn"/>
+                            <constraint firstItem="Oj7-FL-PQe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sdC-62-PWi"/>
+                            <constraint firstItem="J7j-Yr-mnm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uXP-sR-E80"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="g4D-wa-dMY"/>
+                    <connections>
+                        <outlet property="createProductBtn" destination="Oj7-FL-PQe" id="c1T-8T-ge5"/>
+                        <outlet property="showProductBtn" destination="AMK-cJ-esd" id="pEY-5I-ZUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="67.633928571428569"/>
+        </scene>
+        <!--Show Product View Controller-->
+        <scene sceneID="YKD-Vl-RRp">
+            <objects>
+                <viewController storyboardIdentifier="ShowProductViewController" id="KSk-HO-kyW" customClass="ShowProductViewController" customModule="Product" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IH7-UY-vtR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jty-QW-A31">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KSk-HO-kyW" id="6wm-ew-6Kv"/>
+                                    <outlet property="delegate" destination="KSk-HO-kyW" id="vkV-yN-KJg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EGD-XF-Qps"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jty-QW-A31" firstAttribute="top" secondItem="IH7-UY-vtR" secondAttribute="top" id="Hqv-fi-ZXd"/>
+                            <constraint firstItem="Jty-QW-A31" firstAttribute="trailing" secondItem="EGD-XF-Qps" secondAttribute="trailing" id="I4n-FK-W9W"/>
+                            <constraint firstAttribute="bottom" secondItem="Jty-QW-A31" secondAttribute="bottom" id="MCS-H3-ROA"/>
+                            <constraint firstItem="Jty-QW-A31" firstAttribute="leading" secondItem="EGD-XF-Qps" secondAttribute="leading" id="XWL-Hz-40f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="productTV" destination="Jty-QW-A31" id="uud-RM-HZx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sc4-BP-tIC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597.1014492753625" y="79.6875"/>
+        </scene>
+        <!--Create Product View Controller-->
+        <scene sceneID="Rkl-xw-roq">
+            <objects>
+                <viewController storyboardIdentifier="CreateProductViewController" id="Eiq-Sd-gN6" customClass="CreateProductViewController" customModule="Product" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IqZ-Qp-3ML">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tkq-Nr-3FS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Eiq-Sd-gN6" id="B47-nN-0h6"/>
+                                    <outlet property="delegate" destination="Eiq-Sd-gN6" id="WZz-be-1eu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QC3-1Y-2fE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tkq-Nr-3FS" firstAttribute="top" secondItem="IqZ-Qp-3ML" secondAttribute="top" id="860-ZD-zgv"/>
+                            <constraint firstItem="tkq-Nr-3FS" firstAttribute="trailing" secondItem="QC3-1Y-2fE" secondAttribute="trailing" id="Dat-dE-YaY"/>
+                            <constraint firstAttribute="bottom" secondItem="tkq-Nr-3FS" secondAttribute="bottom" id="fFK-EZ-HcC"/>
+                            <constraint firstItem="tkq-Nr-3FS" firstAttribute="leading" secondItem="QC3-1Y-2fE" secondAttribute="leading" id="irr-bl-UK7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="productTV" destination="tkq-Nr-3FS" id="mhT-3I-aoZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kam-My-HgJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2279.7101449275365" y="79.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qtn-QO-1ne">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xJL-f3-Xi9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xqu-Ma-Od8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JdI-k4-TYi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2o-VT-obo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
